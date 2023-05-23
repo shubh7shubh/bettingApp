@@ -54,6 +54,22 @@ margin-left: 10px;
   overflow-y: auto;
 }
 
+.card::-webkit-scrollbar {
+  width: 0;
+}
+
+.card::-webkit-scrollbar-track {
+  /* background-color: #f1f1f1; */
+}
+
+.card::-webkit-scrollbar-thumb {
+  /* background-color: #888; */
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+  /* background-color: #555; */
+}
+
 .button-row {
   display: flex;
   justify-content: space-between;
@@ -112,6 +128,45 @@ margin-left: 10px;
   left: 17px;
   /* margin-top: 5px; */
 }
+
+.playerOnePopup {
+  position: fixed;
+  top: 277px;
+  left: 346px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 9999;
+}
+.playerTwoPopup {
+  position: fixed;
+  top: 548px;
+  left: 345px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+.win-popup {
+  background-color: green;
+ 
+}
+
+.loss-popup {
+  background-color: red;
+
+}
+
+
+
+
 
 .bottom-row {
   display: flex;
@@ -213,6 +268,26 @@ p {
   
   .columnsContainer {
     display: flex;
+    overflow-y: auto;
+    height: 122px;
+    
+  }
+
+
+  .columnsContainer::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .columnsContainer::-webkit-scrollbar-track {
+    /* background-color: #f1f1f1; */
+  }
+  
+  .columnsContainer::-webkit-scrollbar-thumb {
+    /* background-color: #888; */
+  }
+  
+  .columnsContainer::-webkit-scrollbar-thumb:hover {
+    /* background-color: #555; */
   }
   
   .column {
@@ -301,4 +376,10 @@ color: white;
   }
   .suggestion:hover {
     background-color: #00529c;
+  }
+
+
+  .input-bet{
+    border: none;
+    width: 50px;
   }
